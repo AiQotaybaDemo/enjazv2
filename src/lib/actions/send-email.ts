@@ -43,7 +43,7 @@ export async function sendEmail(data: EmailData) {
       `,
     }
 
-   await transporter.sendMail(mailOptions)
+    await transporter.sendMail(mailOptions)
 
     return { success: true }
   } catch (error) {
