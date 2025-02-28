@@ -1,0 +1,351 @@
+{
+  "nav": {
+    "home": "Home",
+    "business": "Business Setup",
+    "consultancy": "Consultancy",
+    "insurance": "Insurance",
+    "visa": "Visa Services",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "blog": "Blog"
+  },
+  "sideMenu": {
+    "description": "We provide high-quality business setup and consultancy services",
+    "address": {
+      "title": "Address",
+      "value": "204 Mustafa Al Sayegh Street"
+    },
+    "email": {
+      "title": "Email",
+      "value": "info@enjazcb.com"
+    },
+    "phone": {
+      "title": "Contact",
+      "value": "+971 00000000"
+    }
+  },
+  "hero": {
+    "title": "Set up your business with confidence. Grow with purpose. Achieve sustainable success.",
+    "subtitle": "Mainland Company Setup | Offshore Company Setup | Free Zone Company Setup",
+    "description": "Your path to success starts here. Get expert consultancy tailored to your business needs. Book your free consultation today and let’s build your future together!",
+    "cta": {
+      "quote": "Book a Free Consultation",
+      "explore": "Learn More"
+    },
+    "trust": "Trusted by over 10,000 clients | Rated 4.9/5"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "What We Offer",
+    "description": "Starting a new business should be exciting, not overwhelming. Whether you’re launching a new venture or expanding your operations, we help you streamline the entire setup process. Our expert team handles everything from legal registration to essential business tools.",
+    "items": {
+      "registration": {
+        "title": "Business Registration & Licensing",
+        "description": "We handle the entire registration process—from obtaining your trade license to setting up your business location, making it simple and stress-free."
+      },
+      "office": {
+        "title": "Office Setup",
+        "description": "Whether it’s finding the perfect office space or providing the right equipment, we ensure your workspace is optimized for success."
+      },
+      "visa": {
+        "title": "Visa Services",
+        "description": "Need visas for employees? We handle the paperwork and logistics for a smooth and fast process."
+      },
+      "consultancy": {
+        "title": "Specialized Consultancy & Guidance",
+        "description": "Buying or selling a business? Our experienced consultants guide you through every step to ensure you make the right decision."
+      },
+      "technology": {
+        "title": "Technology & Tools",
+        "description": "From laptops to project management software, we equip your business with the essential tools to operate efficiently from day one."
+      }
+    },
+    "companyRegistration": {
+      "hero": {
+        "title": "Company Registration & Corporate Services",
+        "subtitle": "Start and manage your business with ease",
+        "description": "We provide comprehensive business setup solutions, ensuring a hassle-free registration process.",
+        "cta": "Book a Free Consultation"
+      },
+      "services": {
+        "title": "What We Offer",
+        "description": "Comprehensive business setup solutions tailored to your needs",
+        "items": {
+          "formation": {
+            "title": "Company Formation & Registration",
+            "description": "Expert guidance through the entire company formation process, from documentation to final registration."
+          },
+          "license": {
+            "title": "Trade License Assistance",
+            "description": "A streamlined process to obtain your trade license with all necessary approvals and permits."
+          },
+          "account": {
+            "title": "Bank Account Opening",
+            "description": "Assistance in opening corporate bank accounts with leading financial institutions."
+          },
+          "loan": {
+            "title": "Business Loan Support",
+            "description": "Professional support in securing the right financing solutions for your business needs."
+          }
+        }
+      },
+      "cta": {
+        "title": "Start Your Business Today!",
+        "description": "Speak with our experts for a free business setup consultation.",
+        "button": "Get Started"
+      }
+    },
+    "consultancy": {
+      "hero": {
+        "title": "Expert Guidance for Every Step of Your Business Journey",
+        "subtitle": "Strategic Solutions for Business Success",
+        "description": "Starting or expanding your business? Our consultancy services provide tailored solutions for every stage of your business lifecycle. Whether you’re entering a new market, navigating regulatory requirements, or improving operations, we’re here to help.",
+        "cta": "Book a Consultation"
+      },
+      "services": {
+        "title": "Our Consultancy Services",
+        "description": "Comprehensive solutions to help your business thrive",
+        "items": {
+          "strategy": {
+            "title": "Business Strategy & Planning",
+            "description": "Strategic insights to guide your vision and growth. We help you develop robust business plans and growth strategies."
+          },
+          "regulatory": {
+            "title": "Regulatory Guidance & Compliance",
+            "description": "Navigate the legal landscape with ease. Expert advice on compliance requirements and regulatory frameworks."
+          },
+          "market": {
+            "title": "Market Entry & Expansion",
+            "description": "Expert advice on entering new markets and expanding operations. Market analysis and expansion strategies."
+          },
+          "operations": {
+            "title": "Operational Efficiency & Optimization",
+            "description": "Streamline operations for improved performance. Enhance productivity and reduce operational costs."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to Get Started?",
+        "description": "Let’s build your business together. Our expert consultants are ready to help you succeed.",
+        "button": "Book a Consultation"
+      }
+    },
+    "visa": {
+      "hero": {
+        "title": "Easy Visa Solutions for Business Owners & Entrepreneurs",
+        "subtitle": "Simplified Visa Processing for Business Success in the UAE",
+        "description": "We understand that obtaining the right visa is essential for setting up your business in the UAE. Our visa services are designed to simplify the application process and ensure your business’s compliance.",
+        "cta": "Book a Consultation"
+      },
+      "services": {
+        "title": "Our Visa Services",
+        "description": "Comprehensive visa solutions for all your business needs",
+        "items": {
+          "business": {
+            "title": "Business Visas",
+            "description": "Full support for business owners and investors. Expert guidance through the entire visa process."
+          },
+          "employee": {
+            "title": "Employee Visas",
+            "description": "Seamless processing for all your team members. Fast and efficient visa solutions for your workforce."
+          },
+          "freelancer": {
+            "title": "Freelancer Visas",
+            "description": "Tailored solutions for independent contractors and consultants. Ideal for remote workers and freelancers."
+          },
+          "family": {
+            "title": "Family Visas",
+            "description": "Bring your loved ones with you as you grow your business. Comprehensive support for family visas."
+          }
+        }
+      },
+      "process": {
+        "title": "Our Process",
+        "description": "Simple, transparent, and efficient visa processing",
+        "steps": {
+          "consultation": {
+            "title": "Consultation",
+            "description": "We assess your needs and provide a tailored plan."
+          },
+          "application": {
+            "title": "Visa Application",
+            "description": "Fast and efficient processing to minimize downtime."
+          },
+          "support": {
+            "title": "Post-Visa Support",
+            "description": "Ongoing support for renewals and changes."
+          }
+        }
+      },
+      "cta": {
+        "title": "Need Help with Your Visa?",
+        "description": "Let us guide you through the process. Our expert team is ready to assist you.",
+        "button": "Book a Consultation"
+      }
+    },
+    "insurance": {
+      "hero": {
+        "title": "Comprehensive Insurance Solutions",
+        "subtitle": "Protect What Matters",
+        "description": "We offer a wide range of insurance products to protect your business, assets, and loved ones.",
+        "cta": "Get a Quote"
+      },
+      "services": {
+        "title": "Our Insurance Services",
+        "description": "Comprehensive coverage options tailored to your needs",
+        "items": {
+          "health": {
+            "title": "Health Insurance",
+            "description": "Comprehensive health coverage for individuals and families with access to top healthcare providers."
+          },
+          "life": {
+            "title": "Life Insurance",
+            "description": "Protect your loved ones’ financial future with our flexible life insurance policies."
+          },
+          "auto": {
+            "title": "Auto Insurance",
+            "description": "Comprehensive coverage for your vehicles at competitive rates with excellent service."
+          },
+          "property": {
+            "title": "Property Insurance",
+            "description": "Protect your business premises and assets with comprehensive property insurance."
+          },
+          "group": {
+            "title": "Group Insurance",
+            "description": "Tailored group insurance solutions for businesses of all sizes to protect your employees."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to Get Protected?",
+        "description": "Our insurance experts are ready to help you find the perfect coverage for your needs.",
+        "button": "Get a Free Quote"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Why Choose Enjaz for Financial Brokerage?",
+    "description": "At Enjaz Financial Brokerage, we specialize in providing professional brokerage and financial services for buying and selling businesses, commercial assets, and securing loans. With years of experience and a dedicated team, we ensure a smooth and transparent process for our clients.",
+    "features": [
+      "Specialized Business Brokers",
+      "Extensive Network of Buyers and Sellers",
+      "Tailored Financial Solutions",
+      "Transparent and Efficient Process"
+    ],
+    "cta": "Learn More"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by Business Leaders in the UAE",
+    "items": [
+      {
+        "name": "Mohammed Al Rashid",
+        "position": "CEO",
+        "company": "Al Rashid Trading LLC",
+        "content": "Enjaz made the entire business setup process seamless. Their expertise and professional guidance were invaluable in establishing our company in Dubai."
+      },
+      {
+        "name": "Sarah Johnson",
+        "position": "Founder",
+        "company": "Innovation Tech",
+        "content": "The Enjaz team provided exceptional service throughout the visa application process. Their attention to detail and prompt support made a huge difference."
+      },
+      {
+        "name": "Ahmed Hassan",
+        "position": "General Manager",
+        "company": "Global Solutions FZE",
+        "content": "Outstanding consultancy services! Enjaz helped us navigate complex regulations and provided strategic insights that were crucial to our business growth."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Contact Information",
+    "description": "Reach out to us for any inquiries related to business brokerage or financial services. Our team is ready to assist you.",
+    "phone": {
+      "label": "Contact Number",
+      "value": "+971 00000000"
+    },
+    "address": {
+      "label": "Our Location",
+      "value": "204 Mustafa Al Sayegh Street"
+    }
+  },
+  "consultation": {
+    "title": "Get a Free Consultation",
+    "description": "Fill out the form below and we’ll get back to you soon",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "How can we help you?",
+      "submit": "Submit Request"
+    },
+    "success": "Thank you! We’ll get back to you soon.",
+    "error": "Something went wrong. Please try again.",
+    "errors": {
+      "PleaseEnter2": "Please enter at least 2 characters.",
+      "PleaseEnter10": "Please enter at least 10 characters.",
+      "PleaseEnterValidEmail": "Please enter a valid email address.",
+      "PleaseEnterValidPhone": "Please enter a valid phone number."
+    }
+  },
+  "footer": {
+    "about": {
+      "description": "At Enjaz Financial Brokerage, we specialize in providing tailored financial and insurance solutions to help you achieve your goals. We are committed to delivering exceptional service and peace of mind."
+    },
+    "hours": {
+      "title": "Working Hours",
+      "weekdays": "Monday - Friday",
+      "weekdaysHours": "9:00 AM - 6:00 PM",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    },
+    "explore": {
+      "title": "Quick Links",
+      "links": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "testimonials": "Client Testimonials",
+        "blog": "Blog"
+      }
+    },
+    "services": {
+      "title": "Our Solutions",
+      "links": {
+        "buyingSelling": "Business Consultancy",
+        "commercialAssets": "Company Registration",
+        "registration": "Visa Services",
+        "financial": "Insurance Solutions"
+      },
+      "address": {
+        "title": "Address",
+        "value": "204 Mustafa Al Sayegh Street"
+      }
+    },
+    "contact": {
+      "title": "Contact Information"
+    },
+    "copyright": "© All Rights Reserved 2024",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "The latest insights, news, and updates from our team",
+    "readMore": "Read More",
+    "loadMore": "Load More",
+    "backToBlog": "Back to Blog",
+    "moreArticles": "More Articles"
+  },
+  "callBanner": {
+    "title": "Let’s Have a Call",
+    "phone": "+971 00000000"
+  }
+}
