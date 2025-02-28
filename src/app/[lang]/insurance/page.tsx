@@ -41,7 +41,7 @@ export default async function InsurancePage() {
     <main className="pt-20">
       <InsuranceHero />
       <InsuranceServices />
-      <CTA />
+      <CTA name="insurance"/>
     </main>
   )
 }

@@ -7,8 +7,8 @@ export function AboutSection() {
   const t = useTranslations("about")
 
   return (
-    <section id="about" className="bg-gradient-to-b from-gray-50 to-white py-24">
-      <div className="container">
+    <section id="about" className="bg-gradient-to-b from-gray-50 px-4 to-white py-24">
+      <div className="container md:max-w-7xl mx-auto">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Image Column */}
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02]">

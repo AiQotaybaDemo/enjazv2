@@ -1,71 +1,41 @@
 import { LineChart, Scale, TrendingUp, Settings } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { getTranslations } from "next-intl/server"
 
-const defaultDict = {
-  services: {
-    consultancy: {
-      services: {
-        title: "Our Consultancy Services",
-        description: "Comprehensive solutions to help your business thrive",
-        items: {
-          strategy: {
-            title: "Business Strategy & Planning",
-            description:
-              "Strategic insights to guide your vision and growth. We help you develop robust business plans and growth strategies.",
-          },
-          regulatory: {
-            title: "Regulatory & Compliance Guidance",
-            description:
-              "Navigate the legal landscape with ease. Expert advice on compliance requirements and regulatory frameworks.",
-          },
-          market: {
-            title: "Market Entry & Expansion",
-            description:
-              "Expert advice on entering new markets and scaling operations. Market analysis and expansion strategies.",
-          },
-          operations: {
-            title: "Operational Efficiency & Optimization",
-            description:
-              "Streamlining processes for better performance. Improve productivity and reduce operational costs.",
-          },
-        },
-      },
-    },
-  },
-}
 
-export function ConsultancyServices({ dict }: any) {
-  const content = dict?.services?.consultancy?.services ?? defaultDict.services.consultancy.services
+export async function ConsultancyServices() {
+  const t = await getTranslations("services.consultancy.services")
+  // const content = dict?.services?.consultancy?.services ?? defaultDict.services.consultancy.services
 
   const services = [
     {
       icon: LineChart,
-      title: content.items?.strategy?.title,
-      description: content.items?.strategy?.description,
+      title: t("items.strategy.title"),
+      description: ("items.strategy.description"),
     },
     {
       icon: Scale,
-      title: content.items?.regulatory?.title,
-      description: content.items?.regulatory?.description,
+      title: t("items.regulatory.title"),
+      description: t("items.regulatory.description"),
     },
     {
       icon: TrendingUp,
-      title: content.items?.market?.title,
-      description: content.items?.market?.description,
+      title: t("items.market.title"),
+      description: t("items.market.description"),
     },
     {
       icon: Settings,
-      title: content.items?.operations?.title,
-      description: content.items?.operations?.description,
+      title: t("items.operations.title"),
+      description: t("items.operations.description"),
     },
   ]
 
   return (
     <section className="py-24">
-      <div className="container">
+      <div className="container md:max-w-7xl mx-auto">
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{content.title}</h2>
-          <p className="text-lg text-zinc-600">{content.description}</p>
+          <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{t("title")}</h2>
+          <p className="text-lg text-zinc-600">{t("description")}</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">

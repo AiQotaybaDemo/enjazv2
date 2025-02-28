@@ -32,7 +32,7 @@ export function LanguageSwitcher({ currentLang, c = " " }: LanguageSwitcherProps
 
   // Ensure currentLang is a valid key, default to 'en' if not
   return (
-    <Link href={redirectedPathName(currentLang === "ar" ? "en" : "ar")} className="flex items-center gap-2 text-sm">
+    <Link href={redirectedPathName(currentLang === "ar" ? "en" : "ar")} className="flex mr-4 rtl:flex-row-reverse bg-slate-100 px-4 py-2 rounded-lg items-center gap-2 text-sm"> 
       <Image
         src={languages[currentLang === "ar" ? "en" : "ar"].flag || "/placeholder.svg"}
         alt={languages[currentLang === "ar" ? "en" : "ar"].name}

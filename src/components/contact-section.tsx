@@ -22,12 +22,12 @@ export function ContactSection() {
       style={{
         backgroundImage: 'url("https://enjazcb.vercel.app/assets/img/shape/banner-13.jpg")',
       }}
-      className="bg-cover bg-center bg-no-repeat py-24"
+      className="bg-cover bg-center bg-no-repeat px-4 py-24"
     >
-      <div className="container">
+      <div className="container md:max-w-7xl mx-auto">
         <div className={`grid items-center gap-8 lg:grid-cols-2 lg:gap-16 ${isRTL ? "lg:grid-flow-dense" : ""}`}>
           {/* Left Column - Contact Information */}
-          <div className={`space-y-8 rounded-2xl bg-white/95 p-8 shadow-xl backdrop-blur-sm ${isRTL ? "text-right" : ""}`}          >
+          <div className={`space-y-8 rounded-2xl bg-white/95 p-6 md:p-8 shadow-xl backdrop-blur-sm ${isRTL ? "text-right" : ""}`}          >
             {/* Section Header */}
             <div>
               <div

@@ -18,7 +18,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full p-4 overflow-hidden">
       {/* Video Background */}
       <video
         ref={videoRef}
@@ -39,7 +39,7 @@ export function HeroSection() {
       <div className="container relative z-10">
         <div className="flex min-h-screen items-center justify-center mt-14">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="animate-fadeIn mb-6 pb-4 text-3xl font-bold leading-tight bg-gradient-to-r from-[#14697d] to-[#00acd7] text-transparent bg-clip-text drop-shadow-lg sm:text-xl md:text-3xl lg:text-4xl px-4 sm:px-6 md:px-8   ">
+            <h1 className="animate-fadeIn mb-6 pb-4 text-3xl font-bold leading-tight bg-gradient-to-r from-[#14697d] to-[#00acd7] text-transparent bg-clip-text drop-shadow-lg sm:text-xl md:text-3xl lg:text-4xl md:px-8   ">
               {t("title")}
             </h1>
 

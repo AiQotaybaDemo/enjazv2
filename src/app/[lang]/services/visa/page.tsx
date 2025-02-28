@@ -42,7 +42,7 @@ export default async function VisaPage() {
       <VisaHero />
       <VisaServices />
       <VisaProcess />
-      <CTA />
+      <CTA name="visa" />
     </main>
   )
 }

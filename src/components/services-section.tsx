@@ -89,8 +89,8 @@ export function ServicesSection() {
   ]
 
   return (
-    <section id="services" className="bg-[url('/assets/img/shape/37.png')] bg-right-bottom bg-no-repeat py-24">
-      <div className={`container ${isRTL ? "rtl" : ""}`} dir={isRTL ? "rtl" : "ltr"}>
+    <section id="services" className="bg-[url('/assets/img/shape/37.png')] bg-right-bottom px-4 bg-no-repeat py-24">
+      <div className={`container md:max-w-7xl mx-auto ${isRTL ? "rtl" : ""}`} dir={isRTL ? "rtl" : "ltr"}>
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
             <div className="rounded-lg bg-white p-2 shadow-md">

@@ -54,9 +54,9 @@ export function TestimonialsSection() {
   }, [isPaused, nextTestimonial]) // Added nextTestimonial to dependencies
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-24">
-      <div className="container  max-w-7xl" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
-        <div className="mx-auto mb-16 max-w-2xl text-center animate-fadeIn" style={{ animationDuration: "1s" }}>
+    <section className="bg-gradient-to-b from-gray-50 to-white py-24 px-4">
+      <div className="container md:max-w-7xl mx-auto" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
+        <div className="mx-auto mb-16 text-center animate-fadeIn" style={{ animationDuration: "1s" }}>
           <div
             className="mb-4 inline-block rounded-lg bg-[#14697d]/10 px-4 py-2 transform transition-all duration-300 hover:scale-105 hover:bg-[#14697d]/20 cursor-pointer"
             onClick={() => {

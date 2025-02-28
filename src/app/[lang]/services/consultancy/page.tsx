@@ -40,7 +40,7 @@ export default async function ConsultancyPage() {
     <main className="pt-20">
       <ConsultancyHero />
       <ConsultancyServices />
-      <CTA />
+      <CTA name="consultancy" />
     </main>
   )
 }

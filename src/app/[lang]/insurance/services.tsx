@@ -1,77 +1,44 @@
 import { ShieldCheck, Heart, Car, Building, Users2 } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { getTranslations } from "next-intl/server"
 
-const defaultDict = {
-  services: {
-    insurance: {
-      services: {
-        title: "Our Insurance Services",
-        description: "Comprehensive coverage options tailored to your needs",
-        items: {
-          health: {
-            title: "Health Insurance",
-            description:
-              "Comprehensive health coverage for individuals and families with access to top healthcare providers.",
-          },
-          life: {
-            title: "Life Insurance",
-            description: "Protect your loved ones' financial future with our flexible life insurance policies.",
-          },
-          auto: {
-            title: "Auto Insurance",
-            description: "Comprehensive coverage for your vehicles with competitive rates and excellent service.",
-          },
-          property: {
-            title: "Property Insurance",
-            description: "Protect your business premises and assets with our comprehensive property insurance.",
-          },
-          group: {
-            title: "Group Insurance",
-            description: "Tailored group insurance solutions for businesses of all sizes to protect your employees.",
-          },
-        },
-      },
-    },
-  },
-}
-
-export function InsuranceServices({ dict }: any) {
-  const content = dict?.services?.insurance?.services ?? defaultDict.services.insurance.services
+export async function InsuranceServices() {
+  const t = await getTranslations("services.insurance.services")
 
   const services = [
     {
       icon: Heart,
-      title: content.items?.health?.title,
-      description: content.items?.health?.description,
+      title: t("items.health.title"),
+      description: t("items.health.description"),
     },
     {
       icon: ShieldCheck,
-      title: content.items?.life?.title,
-      description: content.items?.life?.description,
+      title: t("items.life.title"),
+      description: t("items.life.description"),
     },
     {
       icon: Car,
-      title: content.items?.auto?.title,
-      description: content.items?.auto?.description,
+      title: t("items.auto.title"),
+      description: t("items.auto.description"),
     },
     {
       icon: Building,
-      title: content.items?.property?.title,
-      description: content.items?.property?.description,
+      title: t("items.property.title"),
+      description: t("items.property.description"),
     },
     {
       icon: Users2,
-      title: content.items?.group?.title,
-      description: content.items?.group?.description,
+      title: t("items.group.title"),
+      description: t("items.group.description"),
     },
   ]
 
   return (
     <section className="py-24">
-      <div className="container">
+      <div className="container  md:max-w-7xl mx-auto">
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{content.title}</h2>
-          <p className="text-lg text-zinc-600">{content.description}</p>
+          <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{t("title")}</h2>
+          <p className="text-lg text-zinc-600">{t("description")}</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

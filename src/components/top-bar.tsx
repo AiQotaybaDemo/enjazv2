@@ -9,7 +9,7 @@ export async function TopBar() {
 
   return (
     <div className="w-full bg-zinc-900 text-white md:flex hidden">
-      <div className="container mx-auto  max-w-7xl">
+      <div className="container mx-auto  md:max-w-7xl">
         <div className="flex flex-col items-center justify-between gap-4 px-4 py-2 md:flex-row">
           {/* Left side - Location and Hours */}
           <div className={`flex flex-col gap-2 text-sm md:flex-row md:gap-6 ${isRTL ? "md:flex-row-reverse" : ""}`}>

@@ -88,8 +88,8 @@ export function ConsultationForm({ dict }: any) {
   }
 
   return (
-    <section id="consultation" className="bg-gray-50 py-24">
-      <div className="container">
+    <section id="consultation" className="bg-gray-50 px-4 py-24">
+      <div className="container md:max-w-7xl">
         <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{content.title}</h2>

@@ -27,7 +27,7 @@ export async function Footer({ lang = "en" }: any) {
   ]
 
   return (
-    <footer className="bg-[#0F172A] text-white">
+    <footer className="bg-[#0F172A] px-4 text-white">
       <div className="container  mx-auto lg:max-w-7xl  py-16">
         <div className={`grid gap-16 lg:grid-cols-3  ${isRTL ? "lg:grid-flow-dense" : ""}`}>
           {/* About Section */}
@@ -178,14 +178,15 @@ export async function Footer({ lang = "en" }: any) {
       <div className="border-t border-gray-800 py-6">
         <div className="container">
           <p className={`text-center text-sm text-gray-400 ${isRTL ? "flex flex-row justify-center gap-2" : ""}`}>
-            {t("copyright")} |{" "}
-            <Link href="#" className="transition-colors hover:text-white">
+            {t("copyright")} 
+            {/* |{" "} */}
+            {/* <Link href="#" className="transition-colors hover:text-white">
               {t("links.privacy")}
             </Link>{" "}
             |{" "}
             <Link href="#" className="transition-colors hover:text-white">
               {t("links.terms")}
-            </Link>
+            </Link> */}
           </p>
         </div>
       </div>

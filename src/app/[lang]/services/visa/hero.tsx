@@ -1,32 +1,19 @@
 import { Button } from "@/components/ui/button"
 import { ConsultationDialog } from "@/components/consultation-dialog"
+import { getTranslations } from "next-intl/server"
 
-const defaultDict = {
-  services: {
-    visa: {
-      hero: {
-        title: "Effortless Visa Solutions for Business Owners & Entrepreneurs",
-        subtitle: "Streamlined Visa Processing for UAE Business Success",
-        description:
-          "We understand that obtaining the right visa is key to establishing your business in the UAE. Our visa services are designed to simplify the application process and ensure your business stays compliant.",
-        cta: "Schedule a Consultation",
-      },
-    },
-  },
-}
-
-export function VisaHero({ dict, lang }: any) {
-  const content = dict?.services?.visa?.hero ?? defaultDict.services.visa.hero
+export async function VisaHero({ dict, lang }: any) {
+  const t = await getTranslations("services.visa.hero")
 
   return (
     <section className="relative bg-gradient-to-b from-gray-50 to-white py-24">
       <div className="container">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="animate-fadeIn mb-6 pb-4 text-3xl font-bold leading-tight bg-gradient-to-r from-[#14697d] to-[#00acd7] text-transparent bg-clip-text drop-shadow-lg sm:text-xl md:text-3xl lg:text-4xl px-4 sm:px-6 md:px-8 ">
-            {content.title}
+            {t("title")}
           </h1>
-          <p className="mb-8 text-md md:text-xl text-zinc-600">{content.subtitle}</p>
-          <p className="mb-12 text-sm md:text-lg text-zinc-600">{content.description}</p>
+          <p className="mb-8 text-md md:text-xl text-zinc-600">{t("subtitle")}</p>
+          <p className="mb-12 text-sm md:text-lg text-zinc-600">{t("description")}</p>
           <ConsultationDialog
             dict={dict}
             lang={lang}
@@ -34,9 +21,9 @@ export function VisaHero({ dict, lang }: any) {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r   cursor-pointer  from-[#14697d] to-[#1a8ba7] px-8 py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
+                className="bg-gradient-to-r text-white cursor-pointer   from-[#14697d] to-[#1a8ba7] px-8 py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
               >
-                <p> {content.cta} </p>
+                <p> {t("cta")} </p>
               </Button>
             }
           />

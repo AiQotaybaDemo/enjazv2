@@ -1,5 +1,6 @@
 import { Building2, Briefcase, Users, LineChart, Laptop } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { useLocale } from "next-intl"
 
 const defaultDict: any = {
     en: {
@@ -66,7 +67,8 @@ const defaultDict: any = {
     },
 }
 
-export function BusinessServices({ lang = "en" }: any) {
+export function BusinessServices() {
+    const lang = useLocale()
     const isRTL = lang === "ar"
     const servicesData = defaultDict[lang]
 
@@ -80,7 +82,7 @@ export function BusinessServices({ lang = "en" }: any) {
 
     return (
         <section className="py-24">
-            <div className={`container ${isRTL ? "rtl" : ""}`} dir={isRTL ? "rtl" : "ltr"}>
+            <div className={`container  md:max-w-7xl mx-auto ${isRTL ? "rtl" : ""}`} dir={isRTL ? "rtl" : "ltr"}>
                 <div className="mx-auto mb-16 max-w-3xl text-center">
                     <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{servicesData.title}</h2>
                     <p className="text-lg text-zinc-600">{servicesData.description}</p>

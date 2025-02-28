@@ -23,8 +23,8 @@ export function LatestPosts({ posts }: any) {
   }
 
   return (
-    <section className="bg-gray-50 py-24">
-      <div className="container">
+    <section className="bg-gray-50 px-4 py-24">
+      <div className="container md:max-w-7xl mx-auto">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{t("title")}</h2>
           <p className="text-lg text-zinc-600">{t("description")}</p>

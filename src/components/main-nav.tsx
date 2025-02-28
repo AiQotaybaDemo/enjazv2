@@ -44,7 +44,7 @@ export function MainNav() {
         isScrolled ? "shadow-lg" : "  md:mt-[35px]",
       )}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto md:max-w-7xl">
         <div className="flex h-20 items-center justify-between px-4">
           {/* Logo */}
           <Link href={`/${lang}`} className="relative z-50 transition-opacity hover:opacity-90">

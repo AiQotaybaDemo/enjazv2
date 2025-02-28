@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ConsultationDialog } from "@/components/consultation-dialog"
+import { useLocale } from "next-intl"
 
 const defaultDict: any = {
   en: {
@@ -16,7 +17,8 @@ const defaultDict: any = {
   }
 }
 
-export function BusinessHero({ dict, lang = "en" }: any) {
+export function BusinessHero() {
+  const lang = useLocale()
   const isRTL = lang === "ar"
   const heroContent = defaultDict[lang]
 
@@ -34,12 +36,10 @@ export function BusinessHero({ dict, lang = "en" }: any) {
             {heroContent.description}
           </p>
           <ConsultationDialog
-            dict={dict}
-            lang={lang}
             trigger={
               <Button
                 size="lg"
-                className="bg-[#14697d] px-8 py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#14697d]/90 hover:shadow-xl"
+                className="bg-[#14697d] text-white cursor-pointer px-8 py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#14697d]/90 hover:shadow-xl"
               >
                 {heroContent.cta}
               </Button>

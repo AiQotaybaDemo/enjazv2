@@ -1,68 +1,38 @@
 import { Briefcase, Users, UserCog, Users2 } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { getTranslations } from "next-intl/server"
 
-
-const defaultDict = {
-  services: {
-    visa: {
-      services: {
-        title: "Our Visa Services",
-        description: "Comprehensive visa solutions for all your business needs",
-        items: {
-          business: {
-            title: "Business Visas",
-            description: "Complete support for company owners and investors. Expert guidance through the entire visa process.",
-          },
-          employee: {
-            title: "Employee Visas",
-            description: "Seamless processing for all your team members. Fast and efficient visa solutions for your workforce.",
-          },
-          freelancer: {
-            title: "Freelancer Visas",
-            description: "Tailored solutions for independent contractors and consultants. Perfect for digital nomads and freelancers.",
-          },
-          family: {
-            title: "Family Visas",
-            description: "Bring your loved ones with you as you grow your business. Comprehensive family visa support.",
-          },
-        },
-      },
-    },
-  },
-}
-
-export function VisaServices({ dict }: any) {
-  const content = dict?.services?.visa?.services ?? defaultDict.services.visa.services
-
+export async function VisaServices() {
+  const t = await getTranslations("services.visa.services")
   const services = [
     {
       icon: Briefcase,
-      title: content.items?.business?.title,
-      description: content.items?.business?.description,
+      title: t("items.business.title"),
+      description: t("items.business.description"),
     },
     {
       icon: Users,
-      title: content.items?.employee?.title,
-      description: content.items?.employee?.description,
+      title: t("items.employee.title"),
+      description: t("items.employee.description"),
     },
     {
       icon: UserCog,
-      title: content.items?.freelancer?.title,
-      description: content.items?.freelancer?.description,
+      title: t("items.freelancer.title"),
+      description: t("items.freelancer.description"),
     },
     {
       icon: Users2,
-      title: content.items?.family?.title,
-      description: content.items?.family?.description,
+      title: t("items.family.title"),
+      description: t("items.family.description"),
     },
   ]
 
   return (
     <section className="py-24">
-      <div className="container">
+      <div className="container mx-auto md:max-w-7xl">
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{content.title}</h2>
-          <p className="text-lg text-zinc-600">{content.description}</p>
+          <h2 className="mb-4 text-3xl font-bold text-zinc-900 md:text-4xl">{t("title")}</h2>
+          <p className="text-lg text-zinc-600">{t("description")}</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
