@@ -4,26 +4,22 @@ import { format } from "date-fns"
 import { arSA } from "date-fns/locale"
 import { ArrowLeft, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { getLocale, getTranslations } from "next-intl/server"
 
-const defaultDict = {
-  blog: {
-    backToBlog: "Back to Blog",
-  },
-}
-
-export function BlogPost({ post, dict, lang }: any) {
+export async function BlogPost({ post }: any) {
+  const lang = await getLocale()
   const isRTL = lang === "ar"
-  const content = dict?.blog ?? defaultDict.blog
+  const t = await getTranslations("blog")
 
   return (
-    <article className="py-24">
-      <div className="container max-w-4xl">
+    <article className="py-10">
+      <div className="container mx-auto md:max-w-4xl">
         {/* Back Button */}
         <div className="mb-8">
           <Button asChild variant="ghost" className="group -ml-4 text-zinc-600 hover:text-[#14697d]">
             <Link href={`/${lang}/blog`} className="flex items-center gap-2">
               <ArrowLeft className={`h-4 w-4 transition-transform ${isRTL ? "rotate-180" : ""}`} />
-              {content.backToBlog}
+              {t("backToBlog")}
             </Link>
           </Button>
         </div>

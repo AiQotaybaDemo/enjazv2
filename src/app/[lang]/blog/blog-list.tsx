@@ -6,23 +6,16 @@ import Image from "next/image"
 import { format } from "date-fns"
 import { arSA } from "date-fns/locale"
 import { Calendar } from "lucide-react"
-import type { Post } from "../../../lib/wordpress"
+import type { Post } from "@/lib/wordpress"
 import NProgress from "nprogress"
+import { useLocale, useTranslations } from "next-intl"
 
 
-const defaultDict = {
-  blog: {
-    title: "Our Blog",
-    description: "Latest insights, news, and updates from our team",
-    readMore: "Read More",
-    loadMore: "Load More",
-  },
-}
-
-export function BlogList({ posts, currentPage, hasNextPage, dict, lang }: any) {
+export function BlogList({ posts, currentPage, hasNextPage }: any) {
   const router = useRouter()
-  const isRTL = lang === "ar"
-  const content = dict?.blog ?? defaultDict.blog
+  const lang = useLocale()
+  const isRTL = useLocale() === "ar"
+  const t = useTranslations("blog")
 
   const handlePageChange = (page: number) => {
     NProgress.start()
@@ -31,11 +24,11 @@ export function BlogList({ posts, currentPage, hasNextPage, dict, lang }: any) {
   }
 
   return (
-    <section className="py-24">
-      <div className="container">
+    <section className="py-10">
+      <div className="container md:max-w-7xl mx-auto">
         <div className="mx-auto mb-16 max-w-2xl text-center">
-          <h1 className="mb-4 text-4xl font-bold text-zinc-900 md:text-5xl">{content.title}</h1>
-          <p className="text-lg text-zinc-600">{content.description}</p>
+          <h1 className="mb-4 text-4xl font-bold text-zinc-900 md:text-5xl">{t("title")}</h1>
+          <p className="text-lg text-zinc-600">{t("description")}</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -71,7 +64,7 @@ export function BlogList({ posts, currentPage, hasNextPage, dict, lang }: any) {
                 </h2>
                 <div className="mb-4 text-zinc-600" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
                 <span className="text-sm font-medium text-[#14697d] transition-colors group-hover:text-[#14697d]/80">
-                  {content.readMore}
+                  {t("readMore")}
                   <svg
                     className={`ml-1 inline-block h-4 w-4 transition-transform ${isRTL ? "rotate-180" : ""} group-hover:${isRTL ? "-translate-x-1" : "translate-x-1"
                       }`}
