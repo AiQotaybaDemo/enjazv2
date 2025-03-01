@@ -1,5 +1,5 @@
 
-import { BlogPost } from "@/app/[lang]/blog/[slug]/blog-post"
+import { BlogPost } from "@/app/[lang]/blog/components/blog-post"
 import { getPost } from "@/lib/wordpress"
 import { Metadata } from "next"
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { getAllPosts } from "@/lib/wordpress"
-import { BlogList } from "./blog-list"
+import { BlogList } from "./components/blog-list"
 
 export async function generateMetadata({ params }: { params: { lang: any } }): Promise<Metadata> {
   const { lang } = await params
@@ -45,7 +45,7 @@ export default async function BlogPage({ params, searchParams }: BlogPageProps) 
   )
 
   return (
-    <main className="pt-20">
+    <main className="pt-10 md:pt-20 p-4">
       <BlogList posts={posts} currentPage={page} hasNextPage={pageInfo.hasNextPage} lang={lang} />
     </main>
   )

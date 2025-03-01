@@ -153,7 +153,7 @@ export const getPost = async (slug: string, lang: any) => {
   `
 
   const variables = {
-    slug,
+    slug : decodeURIComponent(slug),
     language: getLanguageCode(lang),
   }
 

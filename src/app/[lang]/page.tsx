@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/contact-section"
 import { HeroSection } from "@/components/hero-section"
 import { ServicesSection } from "@/components/services-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { LatestPosts } from "@/app/[lang]/blog/latest-posts"
+import { LatestPosts } from "@/app/[lang]/blog/components/latest-posts"
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   const { lang } = await params

@@ -12,8 +12,8 @@ export async function BlogPost({ post }: any) {
   const t = await getTranslations("blog")
 
   return (
-    <article className="py-10">
-      <div className="container mx-auto md:max-w-4xl">
+    <article className="py-4 md:py-10">
+      <div className="container mx-auto md:max-w-4xl px-4">
         {/* Back Button */}
         <div className="mb-8">
           <Button asChild variant="ghost" className="group -ml-4 text-zinc-600 hover:text-[#14697d]">
@@ -39,7 +39,7 @@ export async function BlogPost({ post }: any) {
         )}
 
         {/* Post Header */}
-        <header className="mb-12">
+        <header className="mb-4 md:mb-12">
           <div className="mb-4 flex items-center gap-2 text-sm text-zinc-600">
             <Calendar className="h-4 w-4" />
             <time dateTime={post.date}>
@@ -48,7 +48,8 @@ export async function BlogPost({ post }: any) {
               })}
             </time>
           </div>
-          <h1 className="text-4xl font-bold text-zinc-900 md:text-5xl">{post.title}</h1>
+          {/* supprot responsive title */}
+          <h1 className="text-xl md:text-2xl font-bold text-zinc-900 lg:text-5xl">{post.title}</h1>
         </header>
 
         {/* Post Content */}
