@@ -49,8 +49,8 @@ export function MainNav() {
           {/* Logo */}
           <Link href={`/${lang}`} className="relative z-50 transition-opacity hover:opacity-90">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-z3nO6OxIrddSITqWdFHcqZYvkdt7l7.png"
-              alt="Enjaz Logo"
+              src="logo.svg"
+              alt="Headlinks Logo"
               width={150}
               height={50}
               priority

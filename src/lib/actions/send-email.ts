@@ -23,7 +23,7 @@ export async function sendEmail(data: EmailData) {
 
     const mailOptions = {
       from: process.env.EMAIL_SERVER_USER,
-      to: "ktsyr1@gmail.com",
+      to: "Comedown2024@gmail.com",
       subject: `غير مكتبة - استشارة جديدة من ${data.name}`,
       text: `
         الاسم: ${data.name}

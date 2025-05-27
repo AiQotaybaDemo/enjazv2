@@ -2,9 +2,9 @@ export function generateOrganizationSchema(lang: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: lang === "ar" ? "إنجاز لخدمات الأعمال" : "Enjaz Business Services",
-    url: "https://enjazcb.com",
-    logo: "https://enjazcb.com/logo.png",
+    name: lang === "ar" ? "إنجاز لخدمات الأعمال" : "Headlinks Business Services",
+    url: "https://headlinkes.com",
+    logo: "https://headlinkes.com/logo.svg",
     description:
       lang === "ar"
         ? "خدمات احترافية لتأسيس الأعمال والاستشارات والخدمات المؤسسية في الإمارات"
@@ -18,13 +18,13 @@ export function generateOrganizationSchema(lang: string) {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+971-00-000-0000",
+      telephone: "+971-04-264-8726",
       contactType: "customer service",
     },
     sameAs: [
-      "https://www.facebook.com/enjazcb",
-      "https://twitter.com/enjazcb",
-      "https://www.linkedin.com/company/enjazcb",
+      // "https://www.facebook.com/Headlinks",
+      // "https://twitter.com/Headlinks",
+      // "https://www.linkedin.com/company/Headlinks",
     ],
   }
 }

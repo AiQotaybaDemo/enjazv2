@@ -35,7 +35,7 @@ export async function Footer({ lang = "en" }: any) {
             <Link href={`/${lang}/#home`} className="block">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-z3nO6OxIrddSITqWdFHcqZYvkdt7l7.png"
-                alt="Enjaz Logo"
+                alt="Headlinks Logo"
                 width={180}
                 height={60}
                 loading="lazy"
@@ -107,18 +107,21 @@ export async function Footer({ lang = "en" }: any) {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1E293B]">
                   <MapPin className="h-5 w-5 text-[#14697d]" />
                 </div>
-                <span className="text-gray-400">{isRTL ? "٢٠٤ شارع مصطفى الصايغ" : "204 Mustafa Al Sayeh Street"}</span>
+                <span className="text-gray-400">{isRTL
+                  ? "مكتب 201، مبنى BB03، باي سكوير، شارع العسيّل، منطقة الخليج التجاري، دبي، الإمارات العربية المتحدة"
+                  : "Office 201, Building BB03, Bay Square, Al Asayel Street, Business Bay, Dubai, United Arab Emirates"
+                }</span>
               </li>
               <li className={`flex items-center text-start gap-4 ${isRTL ? "flex-row" : ""}`}>
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1E293B]">
                   <Phone className="h-5 w-5 text-[#14697d]" />
                 </div>
                 <Link
-                  href="tel:+97100000000"
+                  href="tel:+97142648726"
                   className="text-gray-400 transition-colors hover:text-white"
                   style={{ unicodeBidi: "plaintext" }}
                 >
-                  +971 00000000
+                  +971 42648726
                 </Link>
               </li>
               <li className={`flex items-center text-start gap-4 ${isRTL ? "flex-row" : ""}`}>
@@ -178,7 +181,7 @@ export async function Footer({ lang = "en" }: any) {
       <div className="border-t border-gray-800 py-6">
         <div className="container">
           <p className={`text-center text-sm text-gray-400 ${isRTL ? "flex flex-row justify-center gap-2" : ""}`}>
-            {t("copyright")} 
+            {t("copyright")}
             {/* |{" "} */}
             {/* <Link href="#" className="transition-colors hover:text-white">
               {t("links.privacy")}

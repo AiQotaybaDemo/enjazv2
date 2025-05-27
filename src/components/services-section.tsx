@@ -95,7 +95,7 @@ export function ServicesSection() {
           <div className="mb-4 flex items-center justify-center gap-2">
             <div className="rounded-lg bg-white p-2 shadow-md">
               <Image
-                src="https://enjazcb.vercel.app/assets/img/icon/home-5.png"
+                src="/images/icon/home-5.png"
                 alt="Services icon"
                 width={24}
                 height={24}

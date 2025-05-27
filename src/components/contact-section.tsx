@@ -20,7 +20,7 @@ export function ContactSection() {
     <section
       id="contact"
       style={{
-        backgroundImage: 'url("https://enjazcb.vercel.app/assets/img/shape/banner-13.jpg")',
+        backgroundImage: 'url("/images/shape/37.png")',
       }}
       className="bg-cover bg-center bg-no-repeat px-4 py-24"
     >
@@ -35,7 +35,7 @@ export function ContactSection() {
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#14697d]">
                   <Image
-                    src="https://enjazcb.vercel.app/assets/img/icon/home-5.png"
+                    src="/images/icon/home-5.png"
                     alt=""
                     width={20}
                     height={20}

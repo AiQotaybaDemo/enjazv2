@@ -11,22 +11,22 @@ import { LatestPosts } from "@/app/[lang]/blog/components/latest-posts"
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   const { lang } = await params
   return {
-    title: lang === "ar" ? "خدمات تأسيس الأعمال والاستشارات في الإمارات | إنجاز" : "Business Setup & Consultancy Services in UAE | Enjaz",
+    title: lang === "ar" ? "خدمات تأسيس الأعمال والاستشارات في الإمارات | Headlinks" : "Business Setup & Consultancy Services in UAE | Headlinks",
     description: lang === "ar"
-      ? "خدمات احترافية لتأسيس الشركات والاستشارات في الإمارات. احصل على توجيه متخصص لتأسيس الشركات وخدمات التأشيرات وحلول الأعمال"
-      : "Expert business setup, consultancy, and corporate services in UAE. Get professional guidance for company formation, visa services, and business solutions.",
+      ? "خدمات احترافية لتأسيس الشركات والاستشارات في الإمارات. احصل على توجيه متخصص لتأسيس الشركات وخدمات التأشيرات وحلول الأعمال مع Headlinks"
+      : "Expert business setup, consultancy, and corporate services in UAE. Get professional guidance for company formation, visa services, and business solutions with Headlinks.",
     openGraph: {
-      title: lang === "ar" ? "خدمات تأسيس الأعماد والاستشارات في الإمارات | إنجاز" : "Business Setup & Consultancy Services in UAE | Enjaz",
+      title: lang === "ar" ? "خدمات تأسيس الأعمال والاستشارات في الإمارات | Headlinks" : "Business Setup & Consultancy Services in UAE | Headlinks",
       description:
         lang === "ar"
-          ? "خدمات احترافية لتأسيس الشركات والاستشارات في الإمارات. احصل على توجيه متخصص لتأسيس الشركات وخدمات التأشيرات وحلول الأعمال"
-          : "Expert business setup, consultancy, and corporate services in UAE. Get professional guidance for company formation, visa services, and business solutions.",
+          ? "خدمات احترافية لتأسيس الشركات والاستشارات في الإمارات. احصل على توجيه متخصص لتأسيس الشركات وخدمات التأشيرات وحلول الأعمال مع Headlinks"
+          : "Expert business setup, consultancy, and corporate services in UAE. Get professional guidance for company formation, visa services, and business solutions with Headlinks.",
       images: [
         {
-          url: "/images/logo.png",
+          url: "/images/logo.png", // يمكنك تحديث هذا المسار إذا تغير شعار الشركة أيضًا
           width: 1200,
           height: 630,
-          alt: lang === "ar" ? "إنجاز لخدمات الأعمال" : "Enjaz Business Services",
+          alt: lang === "ar" ? "Headlinks لخدمات الأعمال" : "Headlinks General Trading LLC",
         },
       ],
     },

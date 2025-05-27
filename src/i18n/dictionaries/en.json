@@ -21,7 +21,7 @@
     },
     "phone": {
       "title": "Contact",
-      "value": "+971 00000000"
+      "value": "+971 42648726"
     }
   },
   "hero": {
@@ -225,8 +225,8 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Why Choose Enjaz for Financial Brokerage?",
-    "description": "At Enjaz Financial Brokerage, we specialize in providing professional brokerage and financial services for buying and selling businesses, commercial assets, and securing loans. With years of experience and a dedicated team, we ensure a smooth and transparent process for our clients.",
+    "subtitle": "Why Choose Headlinks for Financial Brokerage?",
+    "description": "At Headlinks General Trading LLC, we specialize in providing professional brokerage and financial services for buying and selling businesses, commercial assets, and securing loans. With years of experience and a dedicated team, we ensure a smooth and transparent process for our clients.",
     "features": [
       "Specialized Business Brokers",
       "Extensive Network of Buyers and Sellers",
@@ -243,19 +243,19 @@
         "name": "Mohammed Al Rashid",
         "position": "CEO",
         "company": "Al Rashid Trading LLC",
-        "content": "Enjaz made the entire business setup process seamless. Their expertise and professional guidance were invaluable in establishing our company in Dubai."
+        "content": "Headlinks made the entire business setup process seamless. Their expertise and professional guidance were invaluable in establishing our company in Dubai."
       },
       {
         "name": "Sarah Johnson",
         "position": "Founder",
         "company": "Innovation Tech",
-        "content": "The Enjaz team provided exceptional service throughout the visa application process. Their attention to detail and prompt support made a huge difference."
+        "content": "The Headlinks team provided exceptional service throughout the visa application process. Their attention to detail and prompt support made a huge difference."
       },
       {
         "name": "Ahmed Hassan",
         "position": "General Manager",
         "company": "Global Solutions FZE",
-        "content": "Outstanding consultancy services! Enjaz helped us navigate complex regulations and provided strategic insights that were crucial to our business growth."
+        "content": "Outstanding consultancy services! Headlinks helped us navigate complex regulations and provided strategic insights that were crucial to our business growth."
       }
     ]
   },
@@ -265,7 +265,7 @@
     "description": "Reach out to us for any inquiries related to business brokerage or financial services. Our team is ready to assist you.",
     "phone": {
       "label": "Contact Number",
-      "value": "+971 00000000"
+      "value": "+971 42648726"
     },
     "address": {
       "label": "Our Location",
@@ -293,7 +293,7 @@
   },
   "footer": {
     "about": {
-      "description": "At Enjaz Financial Brokerage, we specialize in providing tailored financial and insurance solutions to help you achieve your goals. We are committed to delivering exceptional service and peace of mind."
+      "description": "At Headlinks Financial Brokerage, we specialize in providing tailored financial and insurance solutions to help you achieve your goals. We are committed to delivering exceptional service and peace of mind."
     },
     "hours": {
       "title": "Working Hours",
@@ -346,6 +346,6 @@
   },
   "callBanner": {
     "title": "Let’s Have a Call",
-    "phone": "+971 00000000"
+    "phone": "+971 42648726"
   }
 }
