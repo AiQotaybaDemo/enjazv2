@@ -17,7 +17,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   return (
     <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
       <head>
-        <meta name="google-site-verification" content="jJF268mOz_VcWyNyuTyQLgXo3RsPTTGXTw_eiKgqToU" />
+        <meta name="google-site-verification" content="cGPHZbMJ5eXE5z2zjwCP54NA4A1Zw6GiZRLoQ6k6xxU" />
       </head>
       <body className={lang === "ar" ? "font-arabic" : "font-sans"}>
         <NextIntlClientProvider messages={messages}>
