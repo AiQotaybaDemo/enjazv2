@@ -7,7 +7,7 @@ export const config = {
   // Match only internationalized pathnames
   matcher: [
     // Match all paths
-    '/((?!api|_next|public|favicon.ico).*)',
+    '/((?!api|_next|public|favicon.ico|sitemap.xml).*)',
     // Match root
     '/',
     // Match all supported locales

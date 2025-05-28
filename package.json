@@ -10,6 +10,7 @@
   },
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
+    "@apollo/client": "^3.13.8",
     "@formatjs/intl-localematcher": "^0.6.0",
     "@hookform/resolvers": "latest",
     "@radix-ui/react-accordion": "^1.2.2",
@@ -47,6 +48,7 @@
     "embla-carousel-react": "8.5.1",
     "graphql": "latest",
     "graphql-request": "latest",
+    "graphql-tag": "^2.12.6",
     "input-otp": "1.4.1",
     "lucide-react": "^0.476.0",
     "negotiator": "latest",

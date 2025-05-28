@@ -5,23 +5,23 @@ import { BlogList } from "./components/blog-list"
 export async function generateMetadata({ params }: { params: { lang: any } }): Promise<Metadata> {
   const { lang } = await params
   return {
-    title: lang === "ar" ? "رؤى وتحديثات الأعمال | مدونة إنجاز" : "Business Insights & Updates | Headlinks Blog",
+    title: lang === "ar" ? "رؤى وتحديثات الأعمال | مدونة Headlinks" : "Business Insights & Updates | Headlinks Blog",
     description:
       lang === "ar"
-        ? "ابق على اطلاع بأحدث رؤى الأعمال وأخبار الصناعة والنصائح المتخصصة من إنجاز. اكتشف معلومات قيمة حول تأسيس وتشغيل الأعمال في الإمارات"
+        ? "ابق على اطلاع بأحدث رؤى الأعمال وأخبار الصناعة والنصائح المتخصصة من Headlinks. اكتشف معلومات قيمة حول تأسيس وتشغيل الأعمال في الإمارات"
         : "Stay updated with the latest business insights, industry news, and expert advice from Headlinks. Discover valuable information about business setup and operations in UAE.",
     openGraph: {
-      title: lang === "ar" ? "رؤى وتحديثات الأعمال | مدونة إنجاز" : "Business Insights & Updates | Headlinks Blog",
+      title: lang === "ar" ? "رؤى وتحديثات الأعمال | مدونة Headlinks" : "Business Insights & Updates | Headlinks Blog",
       description:
         lang === "ar"
-          ? "ابق على اطلاع بأحدث رؤى الأعمال وأخبار الصناعة والنصائح المتخصصة من إنجاز. اكتشف معلومات قيمة حول تأسيس وتشغيل الأعمال في الإمارات"
+          ? "ابق على اطلاع بأحدث رؤى الأعمال وأخبار الصناعة والنصائح المتخصصة من Headlinks. اكتشف معلومات قيمة حول تأسيس وتشغيل الأعمال في الإمارات"
           : "Stay updated with the latest business insights, industry news, and expert advice from Headlinks. Discover valuable information about business setup and operations in UAE.",
       images: [
         {
           url: "/logo.png",
           width: 1200,
           height: 630,
-          alt: lang === "ar" ? "مدونة إنجاز للأعمال" : "Headlinks Business Blog",
+          alt: lang === "ar" ? "مدونة Headlinks للأعمال" : "Headlinks Business Blog",
         },
       ],
     },
