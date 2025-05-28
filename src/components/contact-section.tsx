@@ -85,7 +85,7 @@ export function ContactSection() {
           {/* Right Column - Image */}
           <div className="relative aspect-video w-full overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] lg:aspect-square">
             <Image
-              src="https://sjc.microlink.io/9yuamc4t2h7M9dGv3tC3WmEsNEBG27RMkI5ZNAn0O37dBYuZxhDmJVGNJM-8nJIAxKDh9WRxnIBBVd61Av7CfA.jpeg"
+              src="/images/about.png"
               alt="Customer service representative"
               fill
               loading="lazy"
