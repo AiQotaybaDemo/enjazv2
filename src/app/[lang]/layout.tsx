@@ -7,6 +7,7 @@ import { LoadingProgress } from "@/components/loading-progress";
 import '../globals.css'
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
+import Head from "next/head";
 
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
@@ -15,6 +16,9 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
 
   return (
     <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
+      <Head>
+        <meta name="google-site-verification" content="jJF268mOz_VcWyNyuTyQLgXo3RsPTTGXTw_eiKgqToU" />
+      </Head>
       <body className={lang === "ar" ? "font-arabic" : "font-sans"}>
         <NextIntlClientProvider messages={messages}>
           <LoadingProgress />
