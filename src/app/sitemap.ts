@@ -1,41 +1,6 @@
-import client from '@/lib/apollo-client';
-import { getAllPosts } from '@/lib/wordpress';
-import { gql } from 'graphql-tag';
-import type { MetadataRoute } from 'next';
 
-// Fetch all posts and pages from WordPress using GraphQL
-// export const getAllPosts = async () => {
-//     try {
-//         const allposts = gql`
-//             query Posts {
-//                 posts(first: 1000, where: {language: AR}) {
-//                     nodes {
-//                         slug
-//                         modified
-//                         language { 
-//                             code
-//                         }
-//                     }
-//                 }
-//                 pages(first: 1000, where: {language: AR}) {
-//                     nodes {
-//                         slug
-//                         modified
-//                         language { 
-//                             code
-//                         }
-//                     }
-//                 }
-//             }
-//         `;
-//         const { data } = await client.query({ query: allposts, fetchPolicy: 'no-cache' });
-//         return data;
-//     } catch (error) {
-//         // eslint-disable-next-line no-console
-//         console.error('Error fetching posts and pages:', error);
-//         return { posts: { nodes: [] }, pages: { nodes: [] } };
-//     }
-// };
+import { getAllPosts } from '@/lib/wordpress';
+import type { MetadataRoute } from 'next';
 
 // Generate the sitemap
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
