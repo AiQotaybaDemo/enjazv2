@@ -34,7 +34,7 @@ export async function Footer({ lang = "en" }: any) {
           <div className={`space-y-6 ${isRTL ? "text-right" : "text-left"}`}>
             <Link href={`/${lang}/#home`} className="block">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-z3nO6OxIrddSITqWdFHcqZYvkdt7l7.png"
+                src="/logo.svg"
                 alt="Headlinks Logo"
                 width={180}
                 height={60}
@@ -128,8 +128,8 @@ export async function Footer({ lang = "en" }: any) {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1E293B]">
                   <Mail className="h-5 w-5 text-[#14697d]" />
                 </div>
-                <Link href="mailto:info@enjazcb.com" className="text-gray-400 transition-colors hover:text-white">
-                  info@enjazcb.com
+                <Link href="mailto:info@headlinkescb.com" className="text-gray-400 transition-colors hover:text-white">
+                  info@headlinkescb.com
                 </Link>
               </li>
             </ul>

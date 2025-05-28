@@ -2,9 +2,9 @@ export function generateOrganizationSchema(lang: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: lang === "ar" ? "إنجاز لخدمات الأعمال" : "Headlinks Business Services",
-    url: "https://headlinkes.com",
-    logo: "https://headlinkes.com/logo.svg",
+    name: lang === "ar" ? "Headlinks لخدمات الأعمال" : "Headlinks Business Services", // Updated
+    url: "https://headlinkes.com", // Updated based on user's previous selection
+    logo: "https://headlinkes.com/logo.svg", // Updated based on user's previous selection
     description:
       lang === "ar"
         ? "خدمات احترافية لتأسيس الأعمال والاستشارات والخدمات المؤسسية في الإمارات"
@@ -22,9 +22,9 @@ export function generateOrganizationSchema(lang: string) {
       contactType: "customer service",
     },
     sameAs: [
-      // "https://www.facebook.com/Headlinks",
-      // "https://twitter.com/Headlinks",
-      // "https://www.linkedin.com/company/Headlinks",
+      // "https://www.facebook.com/Headlinks", // Updated based on user's previous selection
+      // "https://twitter.com/Headlinks", // Updated based on user's previous selection
+      // "https://www.linkedin.com/company/Headlinks", // Updated based on user's previous selection
     ],
   }
 }
@@ -42,7 +42,7 @@ export function generateServiceSchema(
     "@type": "Service",
     provider: {
       "@type": "Organization",
-      name: lang === "ar" ? "إنجاز لخدمات الأعمال" : "Enjaz Business Services",
+      name: lang === "ar" ? "Headlinks لخدمات الأعمال" : "Headlinks Business Services", // Updated
     },
     name: lang === "ar" ? service.name.ar : service.name.en,
     description: lang === "ar" ? service.description.ar : service.description.en,
