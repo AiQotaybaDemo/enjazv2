@@ -19,12 +19,12 @@ export async function TopBar() {
                 {t("sideMenu.address.value")}
               </span>
             </div>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <Clock className="h-4 w-4" />
               <span>
                 {t("footer.hours.title")}: {t("footer.hours.closed")}
               </span>
-            </div>
+            </div> */}
           </div>
 
           {/* Right side - Language and Social */}
