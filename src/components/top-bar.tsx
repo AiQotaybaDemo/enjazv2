@@ -17,7 +17,7 @@ export async function TopBar() {
               <MapPin className="h-4 w-4" />
               <span className="max-w-[400px] overflow-hidden text-ellipsis whitespace-nowrap">
                 {t("sideMenu.address.value")}
-                </span>
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4" />
