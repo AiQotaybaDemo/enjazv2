@@ -19,20 +19,15 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      // style={{
-      //   backgroundImage: 'url("/images/shape/37.png")',
-      // }}
-      className="bg-cover bg-center bg-no-repeat px-4 py-24 bg-[#1289A6]"
+      className="bg-cover bg-center bg-no-repeat px-4 py-24 "
     >
-      <div className="">
-        <div className={`container md:max-w-7xl mx-auto grid items-center gap-8 lg:grid-cols-2 lg:gap-16 ${isRTL ? "lg:grid-flow-dense" : ""}`}>
-          {/* Left Column - Contact Information */}
-          <div className={`space-y-8 rounded-2xl bg-white/95 p-6 md:p-8 shadow-xl backdrop-blur-sm ${isRTL ? "text-right" : ""}`}          >
+      <div className={` justify-center mx-auto grid items-center gap-4 lg:grid-cols-2   ${isRTL ? "lg:grid-flow-dense" : ""}`}>
+        {/* Left Column - Contact Information */}
+        <div className="flex justify-end w-full">
+          <div className={` md:max-w-[40rem] space-y-8 rounded-2xl  bg-white/95 p-6 md:p-8 shadow-xl backdrop-blur-sm ${isRTL ? "text-right" : ""}`} >
             {/* Section Header */}
             <div>
-              <div
-                className={`mb-6 inline-flex items-center gap-2 rounded-full bg-[#1289A6]/10 px-4 py-2 ${isRTL ? "flex-row-reverse" : ""}`}
-              >
+              <div className={`mb-6 inline-flex items-center gap-2 rounded-full bg-[#1289A6]/10 px-4 py-2 ${isRTL ? "flex-row-reverse" : ""}`} >
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1289A6]">
                   <Image
                     src="/images/icon/home-5.png"
@@ -81,15 +76,17 @@ export function ContactSection() {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Right Column - Image */}
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] lg:aspect-square">
+        {/* Right Column - Image */}
+        <div className="  md:max-w-[40rem] bg-[#1289A6]">
+          <div className="relative flex justify-end aspect-video w-full overflow-hidden rounded-2xl   transition-transform hover:scale-[1.02] lg:aspect-square">
             <Image
               src="/images/about.png"
               alt="Customer service representative"
               fill
               loading="lazy"
-              className="object-cover"
+              className="object-cover my-14 max-w-[80%] rounded-2xl max-h-[80%] mx-auto"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
