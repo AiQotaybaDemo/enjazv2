@@ -58,7 +58,7 @@ export function TestimonialsSection() {
       <div className="container md:max-w-7xl mx-auto" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
         <div className="mx-auto mb-16 text-center animate-fadeIn" style={{ animationDuration: "1s" }}>
           <div
-            className="mb-4 inline-block rounded-lg bg-[#14697d]/10 px-4 py-2 transform transition-all duration-300 hover:scale-105 hover:bg-[#14697d]/20 cursor-pointer"
+            className="mb-4 inline-block rounded-lg bg-[#1289A6]/10 px-4 py-2 transform transition-all duration-300 hover:scale-105 hover:bg-[#1289A6]/20 cursor-pointer"
             onClick={() => {
               // Subtle bounce animation on click
               const element: HTMLElement | null = document.querySelector(".testimonial-title")
@@ -67,7 +67,7 @@ export function TestimonialsSection() {
               element?.classList.add("animate-bounce")
             }}
           >
-            <h4 className="testimonial-title text-lg font-semibold text-[#14697d] transition-colors duration-300 hover:text-[#14697d]/80">
+            <h4 className="testimonial-title text-lg font-semibold text-[#1289A6] transition-colors duration-300 hover:text-[#1289A6]/80">
               {t("title")}
             </h4>
           </div>
@@ -76,7 +76,7 @@ export function TestimonialsSection() {
 
         <div className="mx-auto max-w-4xl">
           <Card className="relative overflow-hidden bg-white p-8 shadow-lg md:p-12 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
-            <div className="absolute right-6 rtl:left-6 top-6 text-[#14697d]">
+            <div className="absolute right-6 rtl:left-6 top-6 text-[#1289A6]">
               <Quote className="h-12 w-12 rotate-180 opacity-10" />
             </div>
 

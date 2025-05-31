@@ -16,7 +16,7 @@ export async function BlogPost({ post }: any) {
       <div className="container mx-auto md:max-w-4xl px-4">
         {/* Back Button */}
         <div className="mb-8">
-          <Button asChild variant="ghost" className="group -ml-4 text-zinc-600 hover:text-[#14697d]">
+          <Button asChild variant="ghost" className="group -ml-4 text-zinc-600 hover:text-[#1289A6]">
             <Link href={`/${lang}/blog`} className="flex items-center gap-2">
               <ArrowLeft className={`h-4 w-4 transition-transform ${isRTL ? "rotate-180" : ""}`} />
               {t("backToBlog")}
@@ -54,7 +54,7 @@ export async function BlogPost({ post }: any) {
 
         {/* Post Content */}
         <div
-          className="prose max-w-none text-zinc-600 prose-headings:text-zinc-900 prose-a:text-[#14697d] prose-a:no-underline hover:prose-a:text-[#14697d]/80"
+          className="prose max-w-none text-zinc-600 prose-headings:text-zinc-900 prose-a:text-[#1289A6] prose-a:no-underline hover:prose-a:text-[#1289A6]/80"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </div>

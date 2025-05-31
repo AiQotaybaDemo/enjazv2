@@ -36,19 +36,17 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white/70" />
 
       {/* Content */}
-      <div className="container relative z-10">
+      <div className="container relative z-10 mx-auto">
         <div className="flex min-h-screen items-center justify-center mt-14">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="animate-fadeIn mb-6 pb-4 text-3xl font-bold leading-tight bg-gradient-to-r from-[#14697d] to-[#00acd7] text-transparent bg-clip-text drop-shadow-lg sm:text-xl md:text-3xl lg:text-4xl md:px-8   ">
+            <h1 className="animate-fadeIn mb-6 pb-4 text-3xl font-bold leading-tight bg-gradient-to-r from-[#1289A6] to-[#00acd7] text-transparent bg-clip-text drop-shadow-lg sm:text-xl md:text-3xl lg:text-4xl md:px-8   ">
               {t("title")}
             </h1>
 
-            <p className="animate-fadeIn mb-4 md:mb-10 text-md md:text-lg font-semibold text-zinc-800 drop-shadow">
+            <p className="animate-fadeIn mb-4 md:mb-6 text-md md:text-lg font-semibold text-zinc-800 drop-shadow">
               {t("subtitle")}
             </p>
-            <p className="animate-fadeIn  mb-4 md:mb-10 text-sm md:text-lg text-zinc-800 drop-shadow">
-              {t("description")}
-            </p>
+            <p className="animate-fadeIn  mb-4 md:mb-6 text-sm md:text-md text-zinc-800 drop-shadow" dangerouslySetInnerHTML={{ __html: t("description") }} />
 
             <div
               className={`flex flex-col items-center justify-center gap-4 sm:flex-row ${isRTL ? "sm:flex-row-reverse" : ""
@@ -56,7 +54,7 @@ export function HeroSection() {
             >
               <ConsultationDialog
                 trigger={
-                  <Button className="animate-fadeIn w-full bg-gradient-to-r from-[#14697d] to-[#1a8ba7] px-8 py-6 text-lg font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl sm:w-auto">
+                  <Button className="animate-fadeIn w-full bg-gradient-to-r from-[#1289A6] to-[#1a8ba7] px-8 py-6 text-lg font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl sm:w-auto">
                     {t("cta.quote")}
                   </Button>
                 }

@@ -6,8 +6,8 @@ import { useTranslations } from "next-intl"
 export function CTA({ name = "visa" }: any) {
   const t = useTranslations(`services.${name}.cta`)
   return (
-    <section className="bg-gradient-to-r from-[#14697d] to-[#1a8ba7] py-24 text-white">
-      <div className="container">
+    <section className="bg-gradient-to-r from-[#1289A6] to-[#1a8ba7] py-24 text-white">
+      <div className="container mx-auto">
         <div className="mx-auto max-w-3xl text-center">
 
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">{t("title")}</h2>
@@ -18,7 +18,7 @@ export function CTA({ name = "visa" }: any) {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white  cursor-pointer bg-transparent px-8 text-white hover:bg-white hover:text-[#14697d]"
+                className="border-2 border-white  cursor-pointer bg-transparent px-8 text-white hover:bg-white hover:text-[#1289A6]"
               >
                 <p>{t("button")} </p>
               </Button>

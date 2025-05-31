@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/", 
         },
-        sitemap: "https://headlinks.com/sitemap.xml",
+        sitemap: "https://headlinkes.com/sitemap.xml",
     }
 }

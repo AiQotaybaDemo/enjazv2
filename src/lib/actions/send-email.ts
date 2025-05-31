@@ -23,6 +23,7 @@ export async function sendEmail(data: EmailData) {
 
     const mailOptions = {
       from: process.env.EMAIL_SERVER_USER,
+      // to: "ktsyr1@gmail.com",
       to: "Comedown2024@gmail.com",
       subject: `غير مكتبة - استشارة جديدة من ${data.name}`,
       text: `
@@ -33,7 +34,7 @@ export async function sendEmail(data: EmailData) {
       `,
       html: `
         <div dir="rtl" style="font-family: Arial, sans-serif;">
-          <h2 style="color: #14697d;">استشارة جديدة</h2>
+          <h2 style="color: #1289A6;">استشارة جديدة</h2>
           <p><strong>الاسم:</strong> ${data.name}</p>
           <p><strong>البريد الإلكتروني:</strong> ${data.email}</p>
           <p><strong>رقم الهاتف:</strong> ${data.phone}</p>

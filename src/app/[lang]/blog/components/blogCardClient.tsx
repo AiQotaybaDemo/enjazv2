@@ -38,11 +38,11 @@ export function BlogCardClient({ post }: any) {
                         })}
                     </time>
                 </div>
-                <h3 className="mb-4 text-xl font-bold text-zinc-900 transition-colors group-hover:text-[#14697d]">
+                <h3 className="mb-4 text-xl font-bold text-zinc-900 transition-colors group-hover:text-[#1289A6]">
                     {post.title}
                 </h3>
                 <div className="mb-4 text-zinc-600" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                <span className="text-sm font-medium text-[#14697d] transition-colors group-hover:text-[#14697d]/80">
+                <span className="text-sm font-medium text-[#1289A6] transition-colors group-hover:text-[#1289A6]/80">
                     {t("readMore")}
                     <svg
                         className={`ml-1 inline-block h-4 w-4 transition-transform ${isRTL ? "rotate-180" : ""} group-hover:${isRTL ? "-translate-x-1" : "translate-x-1"

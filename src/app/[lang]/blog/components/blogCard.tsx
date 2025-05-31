@@ -36,7 +36,7 @@ export async function BlogCard({ post }: any) {
                         })}
                     </time>
                 </div>
-                <h3 className="mb-4 text-xl font-bold text-zinc-900 transition-colors group-hover:text-[#14697d] line-clamp-2">
+                <h3 className="mb-4 text-xl font-bold text-zinc-900 transition-colors group-hover:text-[#1289A6] line-clamp-2">
                     {post.title}
                 </h3>
                 <div className="mb-4 text-zinc-600 line-clamp-2" dangerouslySetInnerHTML={{ __html: post.excerpt }} />

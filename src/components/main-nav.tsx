@@ -32,9 +32,9 @@ export function MainNav() {
     { name: t("home"), href: "/" },
     { name: t("business"), href: "/business" },
     { name: t("consultancy"), href: "/services/consultancy" },
-    { name: t("visa"), href: "/services/visa" },
-    { name: t("insurance"), href: "/insurance" },
-    { name: t("blog"), href: "/blog" },
+    // { name: t("visa"), href: "/services/visa" },
+    // { name: t("insurance"), href: "/insurance" },
+    // { name: t("blog"), href: "/blog" },
   ]
 
   return (
@@ -43,32 +43,34 @@ export function MainNav() {
         "fixed top-0 z-50 w-full transition-all bg-white  duration-300",
         isScrolled ? "shadow-lg" : "  md:mt-[35px]",
       )}
+      dir="ltr"
     >
       <div className="container mx-auto md:max-w-7xl">
-        <div className="flex h-20 items-center justify-between px-4">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href={`/${lang}`} className="relative z-50 transition-opacity hover:opacity-90">
-            <Image
-              src="logo.svg"
-              alt="Headlinks Logo"
-              width={150}
-              height={50}
-              priority
-              className={cn("h-auto w-32 transition-all")}
-            />
-          </Link>
+
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <ul className={`flex items-center ${isRTL ? "space-x-reverse" : ""} space-x-6`}>
+          <div className="hidden md:flex md:items-center md:justify-between md:space-x-8 w-full md:rtl:flex-row-reverse md:ltr:flex-row">
+            <Link href={`/${lang}`} className="relative z-50 transition-opacity hover:opacity-90">
+              <Image
+                src="/logo.svg"
+                alt="Headlinks Logo"
+                width={150}
+                height={50}
+                priority
+                className={cn("h-auto w-32 transition-all")}
+              />
+            </Link>
+            <ul className={`flex items-center gap-4 ${isRTL ? "space-x-reverse" : ""} space-x-6`}>
               {navLinks.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={`/${lang}${item.href}`}
                     className={cn(
-                      "relative text-sm font-medium transition-colors hover:text-[#14697d]",
+                      "relative text-sm font-medium transition-colors hover:text-[#1289A6]",
                       activeLink === item.href
-                        ? "text-[#14697d] after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-[#14697d] after:content-['']"
+                        ? "text-[#1289A6] after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-[#1289A6] after:content-['']"
                         : "text-zinc-600",
                     )}
                     onClick={() => setActiveLink(item.href)}
@@ -77,10 +79,33 @@ export function MainNav() {
                   </Link>
                 </li>
               ))}
-              <LanguageSwitcher currentLang={lang} c={"text-[#333]"} />
             </ul>
+            <div className="flex flex-row rtl:flex-row-reverse" >
+              <Link
+                href={`/blog`}
+                className={cn(
+                  "relative text-sm font-medium transition-colors hover:text-[#1289A6] px-4 flex items-center",
+                  "text-zinc-600",
+                )}
+              // onClick={() => setActiveLink(item.href)}
+              >
+                {t("blog")}
+                {/* {item.name} */}
+              </Link>
+              <LanguageSwitcher currentLang={lang} c={"text-[#333]"} />
+            </div>
           </div>
 
+          <Link href={`/${lang}`} className="relative z-50 hover:opacity-90 elative   rounded-lg p-2 transition-colors md:hidden">
+            <Image
+              src="/logo.svg"
+              alt="Headlinks Logo"
+              width={150}
+              height={50}
+              priority
+              className={cn("h-auto w-32 transition-all")}
+            />
+          </Link>
           {/* Mobile Menu Button */}
           <button
             className={cn("relative z-50 rounded-lg p-2 transition-colors md:hidden", " bg-white/10 hover:bg-white/20")}
@@ -106,7 +131,7 @@ export function MainNav() {
                         href={`/${lang}${item.href}`}
                         className={cn(
                           "block rounded-lg p-3 text-lg font-medium transition-all hover:bg-zinc-50",
-                          activeLink === item.href ? "text-[#14697d]" : "text-zinc-600",
+                          activeLink === item.href ? "text-[#1289A6]" : "text-zinc-600",
                         )}
                         onClick={() => {
                           setActiveLink(item.href)

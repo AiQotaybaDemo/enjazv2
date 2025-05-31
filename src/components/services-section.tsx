@@ -1,4 +1,4 @@
-import { Building2, Briefcase, Users, LineChart, Laptop } from "lucide-react"
+import { Building2, Briefcase, Users, LineChart, Laptop, FileText } from "lucide-react"
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
@@ -36,6 +36,12 @@ const defaultDict = {
         description:
           "From laptops to project management software, we equip your business with the essential tools to operate efficiently from day one.",
       },
+      government: {
+        title: "Government Documents",
+        description: "We handle all government-related documentation, including attestation, translation, and legalization of documents for seamless business operations.",
+      },
+//       Consultancy & Expert Guidance
+// Buying or selling a business? Our experienced consultants guide you through every step to ensure you make the right move
     },
   },
   ar: {
@@ -53,6 +59,9 @@ const defaultDict = {
         title: "إعداد المكاتب",
         description:
           "سواء كان الأمر يتعلق بإيجاد المساحة المكتبية المثالية أو توفير المعدات المناسبة، نحن نضمن تحسين مساحة عملك للنجاح.",
+      }, government: {
+        title: "المستندات الحكومية",
+        description: "نتولى جميع المستندات المتعلقة بالحكومة، بما في ذلك التصديق والترجمة والتوثيق القانوني للمستندات لضمان سير العمل بسلاسة.",
       },
       visa: {
         title: "خدمات التأشيرات",
@@ -63,6 +72,11 @@ const defaultDict = {
         description: "شراء أو بيع شركة؟ مستشارونا ذوو الخبرة يوجهونك خلال كل خطوة لضمان اتخاذك القرار الصحيح.",
       },
       technology: {
+        title: "التكنولوجيا والأدوات",
+        description:
+          "من أجهزة الكمبيوتر المحمولة إلى برامج إدارة المشاريع، نجهز عملك بالأدوات الأساسية للعمل بكفاءة من اليوم الأول.",
+      },
+      technology2: {
         title: "التكنولوجيا والأدوات",
         description:
           "من أجهزة الكمبيوتر المحمولة إلى برامج إدارة المشاريع، نجهز عملك بالأدوات الأساسية للعمل بكفاءة من اليوم الأول.",
@@ -80,12 +94,20 @@ export function ServicesSection() {
   // Add type checking for items
   const items = services?.items
 
-  const servicesList = [
-    { icon: Building2, ...items.registration },
-    { icon: Briefcase, ...items.office },
-    { icon: Users, ...items.visa },
+  // const servicesList = [
+  //   { icon: LineChart, ...items.consultancy },
+  //   { icon: Building2, ...items.registration },
+  //   { icon: FileText, ...items.government },
+  //   { icon: Briefcase, ...items.office },
+  //   { icon: Users, ...items.visa },
+  //   { icon: Laptop, ...items.technology },
+  // ]
+
+  const servicesList2 = [ 
+    { icon: Building2, ...items.registration }, 
     { icon: LineChart, ...items.consultancy },
-    { icon: Laptop, ...items.technology },
+
+    { icon: Users, ...items.visa }, 
   ]
 
   return (
@@ -108,25 +130,25 @@ export function ServicesSection() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {servicesList.map((service, index) => (
-            <Link
+          {servicesList2.map((service, index) => (
+            <div
               key={index}
-              href={`/${lang}${index === 0 ? "/services/company-registration"
-                : index === 1 ? "/business"
-                  : index === 2 ? "/services/visa"
-                    : index === 3 ? "/services/consultancy"
-                      : "/business"
-                }`}
+              // href={`/${lang}${index === 0 ? "/services/company-registration"
+              //   : index === 1 ? "/business"
+              //     : index === 2 ? "/services/visa"
+              //       : index === 3 ? "/services/consultancy"
+              //         : "/business"
+              //   }`}
               className="block transition-transform hover:-translate-y-1"
             >
               <Card className="group relative flex h-full flex-col bg-white p-8 text-center shadow-lg transition-all duration-300 hover:shadow-xl">
                 <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-gray-50 shadow-inner">
-                  <service.icon className="h-8 w-8 text-[#14697d]" />
+                  <service.icon className="h-8 w-8 text-[#1289A6]" />
                 </div>
                 <h3 className="mb-4 text-2xl font-bold text-zinc-900">{service.title}</h3>
                 <p className="text-zinc-600">{service.description}</p>
               </Card>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

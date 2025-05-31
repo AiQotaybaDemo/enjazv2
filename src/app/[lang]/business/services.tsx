@@ -1,4 +1,4 @@
-import { Building2, Briefcase, Users, LineChart, Laptop } from "lucide-react"
+import { Building2, Briefcase, Users, LineChart, Laptop, FileText } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { useLocale } from "next-intl"
 
@@ -32,6 +32,10 @@ const defaultDict: any = {
                 description:
                     "From laptops to project management software, we equip your business with the essential tools to operate efficiently from day one.",
             },
+            government: {
+                title: "Government Documents",
+                description: "We handle all government-related documentation, including attestation, translation, and legalization of documents for seamless business operations.",
+            },
         },
     },
     ar: {
@@ -63,6 +67,10 @@ const defaultDict: any = {
                 description:
                     "من أجهزة الكمبيوتر المحمولة إلى برامج إدارة المشاريع، نزود عملك بالأدوات الأساسية لضمان التشغيل الفعّال منذ اليوم الأول.",
             },
+            government: {
+                title: "المستندات الحكومية",
+                description: "نتولى جميع المستندات المتعلقة بالحكومة، بما في ذلك التصديق والترجمة والتوثيق القانوني للمستندات لضمان سير العمل بسلاسة.",
+            },
         },
     },
 }
@@ -73,10 +81,11 @@ export function BusinessServices() {
     const servicesData = defaultDict[lang]
 
     const servicesList = [
+        { icon: LineChart, ...servicesData.items.consultancy },
         { icon: Building2, ...servicesData.items.registration },
+        { icon: FileText, ...servicesData.items.government },
         { icon: Briefcase, ...servicesData.items.office },
         { icon: Users, ...servicesData.items.visa },
-        { icon: LineChart, ...servicesData.items.consultancy },
         { icon: Laptop, ...servicesData.items.technology },
     ]
 
@@ -91,8 +100,8 @@ export function BusinessServices() {
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {servicesList.map((service, index) => (
                         <Card key={index} className="flex flex-col p-8">
-                            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-[#14697d]/10">
-                                <service.icon className="h-6 w-6 text-[#14697d]" />
+                            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-[#1289A6]/10">
+                                <service.icon className="h-6 w-6 text-[#1289A6]" />
                             </div>
                             <h3 className="mb-4 text-xl font-bold text-zinc-900">{service.title}</h3>
                             <p className="text-zinc-600">{service.description}</p>

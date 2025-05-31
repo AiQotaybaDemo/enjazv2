@@ -17,7 +17,7 @@
     },
     "email": {
       "title": "Email",
-      "value": "info@headlinkescb.com"
+      "value": "info@headlinkes.com"
     },
     "phone": {
       "title": "Contact",
@@ -25,9 +25,9 @@
     }
   },
   "hero": {
-    "title": "Set up your business with confidence. Grow with purpose. Achieve sustainable success.",
+    "title": "Your Business Value, Our Expertise.",
     "subtitle": "Mainland Company Setup | Offshore Company Setup | Free Zone Company Setup",
-    "description": "Your path to success starts here. Get expert consultancy tailored to your business needs. Book your free consultation today and let’s build your future together!",
+    "description": "Are you tired from running your business and thinking of giving it up?<br /> Do you have a lot of debt and find it difficult to manage?<br /> Or do you want to take on big projects but feel held back by financial or operational challenges?<br /> We have the solutions.",
     "cta": {
       "quote": "Book a Free Consultation",
       "explore": "Learn More"
@@ -225,8 +225,8 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Why Choose Headlinks for Financial Brokerage?",
-    "description": "At Headlinks General Trading LLC, we specialize in providing professional brokerage and financial services for buying and selling businesses, commercial assets, and securing loans. With years of experience and a dedicated team, we ensure a smooth and transparent process for our clients.",
+    "subtitle": "Why Choose Headlinks?",
+    "description": "We help businesses uncover their true value and make smarter growth decisions. Whether it’s figuring out what a company is worth, finding the best markets to expand into, or cutting costs without cutting corners—we turn data into actionable strategies. Think of us as the ‘GPS’ for business success!",
     "features": [
       "Specialized Business Brokers",
       "Extensive Network of Buyers and Sellers",
@@ -269,7 +269,7 @@
     },
     "address": {
       "label": "Our Location",
-      "value": "204 Mustafa Al Sayegh Street"
+      "value": "Office 201, Building BB03, Bay Square, Al Asayel Street, Business Bay, Dubai, United Arab Emirates"
     }
   },
   "consultation": {
@@ -293,7 +293,7 @@
   },
   "footer": {
     "about": {
-      "description": "At Headlinks Financial Brokerage, we specialize in providing tailored financial and insurance solutions to help you achieve your goals. We are committed to delivering exceptional service and peace of mind."
+      "description": "Headlinkes is a UAE-based global business consultancy specializing in strategic valuation, market entry, and expansion solutions. We empower businesses to unlock their true worth, optimize costs, and make data-driven decisions for sustainable growth. With expertise in MENA and international markets, we provide tailored advisory services for startups, SMEs, and corporations"
     },
     "hours": {
       "title": "Working Hours",

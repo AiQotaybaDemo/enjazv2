@@ -38,7 +38,7 @@ export async function VisaServices() {
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
             <Card key={index} className="flex flex-col p-8 hover:shadow-lg transition-shadow">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-[#14697d] to-[#1a8ba7]">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-[#1289A6] to-[#1a8ba7]">
                 <service.icon className="h-6 w-6 text-white" />
               </div>
               <h3 className="mb-4 text-xl font-bold text-zinc-900">{service.title}</h3>

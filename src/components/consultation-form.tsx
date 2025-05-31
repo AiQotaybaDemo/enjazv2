@@ -69,7 +69,7 @@ export function ConsultationForm({ dict }: any) {
       if (result.success) {
         toast({
           title: content.success,
-          className: "bg-[#14697d] text-white",
+          className: "bg-[#1289A6] text-white",
         })
         form.reset()
       } else {
@@ -156,7 +156,7 @@ export function ConsultationForm({ dict }: any) {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-gradient-to-r from-[#14697d] to-[#1a8ba7] py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-[#1289A6] to-[#1a8ba7] py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
                 >
                   {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                   {content.form?.submit}

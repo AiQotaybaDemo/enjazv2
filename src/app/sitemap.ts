@@ -9,12 +9,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const posts = content?.nodes || [];
 
     // Base URL for the sitemap
-    const baseUrl = process.env.NEXT_PUBLIC_apis?.replace('/api', '') || 'https://headlinks.com';
+    const baseUrl = process.env.NEXT_PUBLIC_apis?.replace('/api', '') || 'https://headlinkes.com';
 
     // Static routes
     const staticRoutes = [
         { url: '/ar', priority: 0.9 },
         { url: '/en', priority: 0.9 },
+        { url: '/en/business', lastModified: new Date().toISOString(), changeFrequency: 'weekly', priority: 0.8 },
+        { url: '/ar/business', lastModified: new Date().toISOString(), changeFrequency: 'weekly', priority: 0.8 },
+        { url: '/en/services/consultancy', lastModified: new Date().toISOString(), changeFrequency: 'weekly', priority: 0.8 },
+        { url: '/ar/services/consultancy', lastModified: new Date().toISOString(), changeFrequency: 'weekly', priority: 0.8 }, 
         { url: '/ar/blog', lastModified: new Date().toISOString(), changeFrequency: 'weekly', priority: 0.9 },
         { url: '/en/blog', lastModified: new Date().toISOString(), changeFrequency: 'weekly', priority: 0.9 },
     ];
@@ -26,9 +30,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: post?.modified ? post.modified : new Date().toISOString().split('T')[0],
         changeFrequency: 'weekly' as const,
         priority: 0.7,
-    }));
-    console.log('Blog Routes:', blogRoutes);
-
+    })); 
+    
     // Format the sitemap entries
     const sitemapEntries: any = [...staticRoutes, ...blogRoutes].map((route) => ({
         url: `${baseUrl}${route.url}`,

@@ -9,7 +9,7 @@ export async function  CallBanner({ lang = "en" }: any) {
 
 
   return (
-    <section className="bg-gradient-to-r from-[#14697d] to-[#1a8ba7] py-6 text-white shadow-lg">
+    <section className="bg-gradient-to-r from-[#1289A6] to-[#1a8ba7] py-6 text-white shadow-lg">
       <div className="container mx-auto lg:max-w-7xl">
         <div
           className={`flex flex-col items-center justify-between gap-4 md:flex-row md:gap-8 ${isRTL ? "md:flex-row" : ""}`}

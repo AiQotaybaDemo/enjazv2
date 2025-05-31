@@ -35,7 +35,7 @@ export function BlogList({ posts, currentPage, hasNextPage }: any) {
           {currentPage > 1 && (
             <button
               onClick={() => handlePageChange(currentPage - 1)}
-              className="rounded-lg border-2 border-[#14697d] bg-transparent px-6 py-2 font-semibold text-[#14697d] shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#14697d] hover:text-white hover:shadow-xl"
+              className="rounded-lg border-2 border-[#1289A6] bg-transparent px-6 py-2 font-semibold text-[#1289A6] shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#1289A6] hover:text-white hover:shadow-xl"
             >
               {isRTL ? "السابق" : "Previous"}
             </button>
@@ -46,7 +46,7 @@ export function BlogList({ posts, currentPage, hasNextPage }: any) {
           {hasNextPage && (
             <button
               onClick={() => handlePageChange(currentPage + 1)}
-              className="rounded-lg border-2 border-[#14697d] bg-transparent px-6 py-2 font-semibold text-[#14697d] shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#14697d] hover:text-white hover:shadow-xl"
+              className="rounded-lg border-2 border-[#1289A6] bg-transparent px-6 py-2 font-semibold text-[#1289A6] shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#1289A6] hover:text-white hover:shadow-xl"
             >
               {isRTL ? "التالي" : "Next"}
             </button>

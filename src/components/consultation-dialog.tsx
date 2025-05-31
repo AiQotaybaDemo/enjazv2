@@ -34,29 +34,30 @@ export function ConsultationDialog({ trigger, className }: any) {
 
 
   const formSchema = z.object({
-    name: z.string().min(2, { message: t("errors.PleaseEnter2") }),
-    email: z.string().email({ message: t("errors.PleaseEnterValidEmail") }),
+    name: z.string().optional(),
+      
+    email: z.string().min(5, { message: t("errors.PleaseEnterValidEmail") }),
     phone: z.string().min(8, { message: t("errors.PleaseEnterValidPhone") }),
-    message: z.string().min(10, { message: t("errors.PleaseEnter10") }),
+    message: z.string().optional(),
   })
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
+      name: " ",
+      email: " ",
+      phone: " ",
+      message: " ",
     }
   })
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema | any>) {
     setIsLoading(true)
     try {
       const result = await sendEmail(values)
 
       if (result?.success) {
-        toast({ title: t("success"), className: "bg-[#14697d] text-white", })
+        toast({ title: t("success"), className: "bg-[#1289A6] text-white", })
         form.reset()
         setOpen(false)
       } else {
@@ -74,7 +75,7 @@ export function ConsultationDialog({ trigger, className }: any) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{trigger || <Button className={className}>{t("title")}</Button>}</DialogTrigger>
-      <DialogContent className={cn("sm:max-w-[500px] bg-white" )} dir={isRTL ? "rtl" : "ltr"}>
+      <DialogContent className={cn("sm:max-w-[500px] bg-white")} dir={isRTL ? "rtl" : "ltr"}>
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-center">{t("title")}</DialogTitle>
           <DialogDescription className="text-base text-center ">{t("description")}</DialogDescription>
@@ -136,7 +137,7 @@ export function ConsultationDialog({ trigger, className }: any) {
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full text-white bg-gradient-to-r from-[#14697d] to-[#1a8ba7] py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
+              className="w-full text-white bg-gradient-to-r from-[#1289A6] to-[#1a8ba7] py-6 text-lg font-semibold shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
             >
               {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               {t("form.submit")}
