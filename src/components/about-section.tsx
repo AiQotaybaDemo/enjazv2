@@ -20,7 +20,7 @@ export function AboutSection() {
                 alt="About Us"
                 fill
                 loading="lazy"
-                className="object-cover my-14 max-w-[80%] rounded-2xl max-h-[80%] mx-auto"
+                className="object-cover my-6 md:my-14  max-w-[80%] rounded-2xl max-h-[80%] mx-auto"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
